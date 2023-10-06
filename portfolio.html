@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/icons8-cv-16.png" type='images/x-icon'>
+    <title>Karan Rajput</title>
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font LineAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+<style>
+
+  /*Var*/
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  
+}
+.download{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 13px;
+    padding:15px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+
+}
+.uni{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#container {
+max-width: 1000px;
+min-height: 1000px;
+background-color: azure;
+}    
+body, html {
+  font-size: 14px;
+  color: #2A2A2A;
+  font-family: 'Poppins', sans-serif; }
+
+.box-cv-wrapper {
+  display: flex;
+  min-height: 100%;
+  box-shadow: black;
+ }
+
+.box-sidebar {
+  width: 400px;
+  background-color: #144E52;
+  color: #fff;
+  padding: 3rem 2rem; }
+  .box-sidebar .avatar {
+    margin-bottom: 2rem; }
+    .box-sidebar .avatar img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  .box-sidebar .userinfo {
+    margin-bottom: 2rem; }
+    .box-sidebar .userinfo .username {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      font-size: 2rem; }
+  .box-sidebar .contact-info {
+    margin-bottom: 2rem; }
+    .box-sidebar .contact-info .item {
+      display: block;
+      margin-bottom: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #e5e5e5;
+      color: #233A5F;
+      border-radius: 4px; }
+  .box-sidebar .list {
+    margin-left: 20px; }
+    .box-sidebar .list li {
+      margin-bottom: 1rem; }
+  .box-sidebar .flex-box.honor {
+    margin-bottom: 1rem; }
+  .box-sidebar .desc {
+    opacity: 0.6; }
+  .box-sidebar .social-list {
+    text-align: center; }
+    .box-sidebar .social-list a {
+      display: inline-block;
+      margin: 0px 5px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s ease; }
+      .box-sidebar .social-list a:hover {
+        transition: transform 0.3s ease;
+        transform: scale(1.1); }
+
+.box-content {
+  margin-left: 2rem;
+  flex: 1;
+  padding: 2rem; }
+  .box-content .main-title {
+    position: relative;
+    color: #233A5F;
+    padding-bottom: 0.2rem; }
+    .box-content .main-title:before {
+      width: 70px;
+      content: "";
+      height: 3px;
+      position: absolute;
+      bottom: 0px;
+      background-color: #233A5F; }
+
+.main-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600; }
+
+.main-desc {
+  color: #878787; }
+
+.box {
+  margin-bottom: 2rem; }
+
+.flex-box {
+  display: flex;
+  justify-content: space-between; }
+  .flex-box .date {
+    white-space: nowrap; }
+  .flex-box .content {
+    flex: 1;
+    margin-left: 2rem;
+    padding-left: 20px;
+    position: relative; }
+    .flex-box .content:before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 0px;
+      background-color: #e5e5e5; }
+  .flex-box .name {
+    margin: 0.5rem 0px;
+    font-weight: 600; }
+  .flex-box .logo {
+    width: 4rem; }
+    .flex-box .logo img {
+      width: 100%; }
+  .flex-box .name-company {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem; }
+  .flex-box .pos {
+    margin-bottom: 1rem; }
+  .flex-box.-education .pos {
+    font-size: 1.2rem; }
+
+/*Responsive*/
+@media (max-width: 991px) {
+  .box-sidebar {
+    width: 320px; } }
+
+@media (max-width: 768px) {
+  .box-cv-wrapper {
+    display: block; }
+  .box-sidebar {
+    width: 100%; }
+  .box-content {
+    margin-left: 0px; } }
+
+@media (max-width: 420px) {
+  .flex-box {
+    display: block; }
+  .flex-box .content {
+    margin-left: 0px;
+    margin-top: 1rem; }
+  .box-content .box {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0; } }
+</style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="uni">
+        <div class="box-cv-wrapper" id="container">
+            <div class="box-sidebar">
+                <div class="avatar">
+                    <img src="./karan.jpeg" alt="">
+                </div>
+                <div class="userinfo">
+                    <div class="username">Karan Rajput</div>
+                    <div class="post">Web Developer</div>
+                </div>
+                <div class="contact-info">
+                  <div class="item">
+                    <i class="fa fa-phone"></i>
+                      +91 9373380377
+                  </div>
+                  <div class="item">
+                    <i class="fa fa-envelope"></i>
+                      <a href="https://mail.google.com/mail?view=cm&fs=1&tf=1&to=karanrajput181212@gmail.com" style="text-decoration: none; color: #144E52;" >karanrajput181212@gmail.com</a>
+                  </div>
+                    <div class="item">
+                      <i class="fa fa-linkedin"></i>
+                      <a href="https://www.linkedin.com/in/karan-ajay-rajput" style="text-decoration: none; color: #144E52;" >LinkedIn</a>
+                    </div>
+                    <div class="item">
+                        <i class="fa fa-l">L</i>
+                          <a href="https://leetcode.com/kar2003/" style="text-decoration: none; color: #144E52;">Leetcode</a>
+                      </div>
+                    <div class="item">
+                      <i class="fa fa-map-marker"></i>
+                        Andheri, Mumbai
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="main-title">Skills</div>
+                      <div class="des">
+                        <h3 style="font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;">Programming Languages</h3>
+                        <ul style="padding-left:2rem; padding-bottom: 1rem;">
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+
+                        </ul>
+                      </div>
+                      <div class="des">
+                        <h3 style="font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;">Data structure and algorithms</h3>
+                        <ul style="padding-left:2rem; padding-bottom: 1rem;">
+                            <li>Solved 100+ questions on leetcode</li>
+                        </ul>
+                      </div>
+                      <div class="des">
+                        <h3 style="font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;">Web Technologies</h3>
+                        <ul style="padding-left:2rem; padding-bottom: 1rem;">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                      </div>
+                      <div class="des">
+                        <h3 style="font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;">Database</h3>
+                        <ul style="padding-left:2rem; padding-bottom: 1rem;">
+                            <li>Mongodb</li>
+                        </ul>
+                      </div>
+                      <div class="des">
+                        <h3 style="font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;">Miscellaneous</h3>
+                        <ul style="padding-left:2rem; padding-bottom: 1rem;">
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                        </ul>
+                      </div>
+                       
+                </div>
+                
+            </div>
+            <div class="box-content">
+                <div class="box">
+                    <div class="main-title">Carrer Objective</div>
+                    <div class="main-desc" style="padding-bottom: 25px;">
+                        I am seeking a role in a company where I can contribute my ideas, expand my knowledge and
+be mentored towards a successful career.
+
+                    </div>
+                    
+                <div class="main-title">Education</div>
+                <div class="box">
+                    <div class="flex-box -exp">
+                        <!-- <div class="logo">
+                            <img src="img/logos/logo1.png" alt="">
+                        </div> -->
+                        <div class="content">
+                            <div class="name-company">Fr. Conceicao Rodrigues College of Engineering, Bandra</div>
+                            <div class="pos">2021-2025 | (BE ECS)</div>
+                            <div class="main-desc">
+                                CGPA: 9.75    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="flex-box -exp">
+                        <!-- <div class="logo">
+                            <img src="img/logos/logo2.png" alt="">
+                        </div> -->
+                        <div class="content">
+                            <div class="name-company">Balmohan Higher Secondary School, Chopda</div>
+                            <div class="pos">2019-2021 | (HSC)</div>
+                            <div class="main-desc">
+                                SCORE: 92%    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="flex-box -exp">
+                        <!-- <div class="logo">
+                            <img src="img/logos/logo3.png" alt="">
+                        </div> -->
+                        <div class="content">
+                            <div class="name-company">Pratap Vidya Mandir, Chopda</div>
+                            <div class="pos">2018-2019 | (SSC)</div>
+                            <div class="main-desc">
+                              SCORE: 86%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="main-title">Projects</div>
+                <div class="box">
+                    <div class="flex-box -exp">
+                        <!-- <div class="logo">
+                            <img src="img/logos/logo1.png" alt="">
+                        </div> -->
+                        <div class="content">
+                            <div class="name-company">Resume Generator Using Linkedin </div>
+                            <div class="pos">July 2022 - May 2023</div>
+                            <div class="main-desc">
+                                Developed and designed web application for students and working professionals to make
+                                resumes. We use proxy curl api to get user data and paste into the different resume templates.
+                                Technologies Used: HTML, CSS, JavaScript,Node.js, Express.js .
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="flex-box -exp">
+                        <!-- <div class="logo">
+                            <img src="img/logos/logo2.png" alt="">
+                        </div> -->
+                        <div class="content">
+                            <div class="name-company">Weather Forecast web application </div>
+                            <div class="pos">April- 2022</div>
+                            <div class="main-desc">
+                                A Weather API based web application to display the weather minute basis accurately, hourly,
+                                daily, weekly and even monthly for different locations.   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <button type="submit" onclick="window.open('resume.pdf')" download class="download">Download Resume</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+</body>
+</html>
